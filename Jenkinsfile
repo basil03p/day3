@@ -4,7 +4,7 @@ pipeline {
   stages{
     stage('Stop old Container'){
       steps {
-        bat 'docker rm -f -day3 || exit 0'
+        bat 'docker rm -f day3 || exit 0'
       }
     } 
     stage('Checkout Code') {
@@ -27,4 +27,5 @@ pipeline {
     }
   }
 }
+
 
